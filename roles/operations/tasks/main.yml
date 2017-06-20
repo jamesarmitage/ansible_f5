@@ -4,7 +4,7 @@
 ############
 - include: bigip_node/add_node.yml
   vars:
-    - host: "192.168.2.5"
+    - host: "192.168.3.5"
     - name: "member1"
     - monitor: "/Common/icmp"
   when: state == "present"
@@ -55,7 +55,7 @@
 - include: bigip_virtual_server/manage_vip.yml
   vars:
     - description: "foo-vip"
-    - destination: "192.168.2.10" 
+    - destination: "192.168.2.10"
     - name: "vip1"
     - pool: "pool1"
     - port: "80"
