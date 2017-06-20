@@ -15,7 +15,7 @@ parimkiko
 Role Variables
 --------------
 ### bigip_node
-* host="10.0.2.167"
+* host="192.168.3.5"
 * name="member1"
 * monitor="/Common/icmp"
 
@@ -26,13 +26,13 @@ Role Variables
 ### bigip_pool_member
 * host="member1"
 * pool="pool1"
-* port="8080"
+* port="80"
 
 ### big_virtual_server
 * description="foo-vip"
-* destination="10.0.2.183"
+* destination="192.168.2.10"
 * name="foo-vip"
-* destination="10.0.2.183"
+* destination="192.168.2.10"
 * name="vip1"
 * pool="pool1"
 * port="80"
